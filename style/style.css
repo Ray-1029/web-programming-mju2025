@@ -1,0 +1,76 @@
+.background {
+  position: relative;
+  width: 2560px;
+  height: 1215px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.dsky {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.disl {
+  display: block;
+  width: 70%;
+  position: absolute;
+  top: 80%;
+  right: 0%;
+}
+
+.dsea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 80%;
+  bottom: 0%;
+}
+
+.kikki {
+  display: block;
+  position: absolute;
+  width: 1162px;
+  height: 603px;
+  top: 400px;
+  left: 400px;
+}
+
+.radio {
+  display: block;
+  position: absolute;
+  top: 435px;
+  left: 415px;
+  animation-name: Rrotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /*왕복한다*/
+  animation-fill-mode: forwards;
+  position: absolute;
+  animation-timing-function: cubic-bezier(0.43, 0.82, 0.83, 0.46);
+  animation-delay: 3s;
+}
+
+@keyframes Rrotate {
+  0% {
+    top: 435px;
+    left: 415px;
+  }
+  40% {
+    top: 454px;
+    left: 378px;
+    rotate: 30deg;
+  }
+  80% {
+    top: 440px;
+    left: 410px;
+    rotate: 5deg;
+  }
+  100% {
+    top: 435px;
+    left: 415px;
+  }
+}

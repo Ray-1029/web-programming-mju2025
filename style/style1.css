@@ -1,0 +1,867 @@
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dsky {
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 0% 120%;
+  pointer-events: none;
+}
+
+.disl {
+  position: absolute;
+  display: block;
+
+  width: 1900px;
+
+  bottom: 400px;
+  right: 0;
+
+  animation-name: disland;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: -2s;
+  pointer-events: none;
+}
+
+@keyframes disland {
+  0% {
+    bottom: 400px;
+    right: 0px;
+  }
+
+  20% {
+    bottom: 410px;
+    right: -10px;
+  }
+
+  50% {
+    bottom: 400px;
+    right: -5px;
+  }
+  80% {
+    bottom: 380px;
+    right: -20px;
+  }
+
+  100% {
+    bottom: 400px;
+    right: 0px;
+  }
+}
+
+.dsea {
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  height: 50%;
+
+  bottom: 0;
+  pointer-events: none;
+}
+
+.day {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.seagul1-1 {
+  position: relative;
+  left: 700px;
+  pointer-events: none;
+}
+
+.seagul1 {
+  display: block;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: -2s;
+  pointer-events: none;
+}
+
+.seagul2-1 {
+  position: relative;
+  top: 50px;
+  left: 700px;
+  pointer-events: none;
+}
+
+.seagul2 {
+  display: block;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: -5s;
+  pointer-events: none;
+}
+
+.seagul3-1 {
+  position: relative;
+  top: 50px;
+  left: 0px;
+  pointer-events: none;
+}
+
+.seagul3 {
+  display: block;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: 0s;
+  pointer-events: none;
+}
+
+.seagul4-1 {
+  position: relative;
+  top: 500px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.seagul4 {
+  display: block;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: -5s;
+  pointer-events: none;
+}
+
+.seagul5-1 {
+  position: relative;
+  top: -150px;
+  left: -280px;
+  pointer-events: none;
+}
+
+.seagul5 {
+  display: block;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: -10s;
+  pointer-events: none;
+}
+
+.kikki {
+  display: block;
+  position: absolute;
+  width: 1162px;
+  height: 603px;
+  top: 200px;
+  left: 200px;
+  animation-name: move;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: 0s;
+}
+
+@keyframes move {
+  0% {
+    top: 200px;
+    left: 200px;
+  }
+
+  20% {
+    top: 280px;
+    left: 300px;
+  }
+
+  50% {
+    top: 300px;
+    left: 190px;
+  }
+  80% {
+    top: 190px;
+    left: 400px;
+  }
+
+  100% {
+    top: 200px;
+    left: 200px;
+  }
+}
+
+.radio {
+  display: block;
+  position: absolute;
+  top: 435px;
+  left: 415px;
+  animation-name: Rrotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.29, 0.44, 0.66);
+  animation-delay: 0s;
+}
+
+@keyframes Rrotate {
+  0% {
+    top: 435px;
+    left: 415px;
+  }
+
+  25% {
+    top: 450px;
+    left: 375px;
+    rotate: 30deg;
+  }
+
+  70% {
+    top: 433px;
+    left: 408px;
+    rotate: 5deg;
+  }
+  100% {
+    top: 435px;
+    left: 415px;
+  }
+}
+
+.hover {
+  animation-duration: 2.5s;
+}
+
+.logo {
+  position: absolute;
+  object-fit: contain;
+  height: 300px;
+  animation-name: logoani;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: 0s;
+  pointer-events: none;
+}
+
+@keyframes logoani {
+  0% {
+    top: 770px;
+    left: 1550px;
+  }
+
+  35% {
+    top: 750px;
+    left: 1800px;
+  }
+
+  70% {
+    top: 780px;
+    left: 1580px;
+  }
+  100% {
+    top: 770px;
+    left: 1550px;
+  }
+}
+
+.dsky.clicked {
+  animation-name: dclicked;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.37, 0.01, 0.45, 0.98);
+}
+
+@keyframes dclicked {
+  0% {
+    object-position: 0% 120%;
+    rotate: 0deg;
+  }
+  100% {
+    object-position: 0% 0%;
+    rotate: 0deg;
+  }
+}
+
+.nsky {
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 0% 120%;
+  opacity: 0%;
+  pointer-events: none;
+}
+
+.nsky.clicked {
+  animation-name: nclicked;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.37, 0.01, 0.45, 0.98);
+}
+
+@keyframes nclicked {
+  0% {
+    object-position: 0% 120%;
+    rotate: 0deg;
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    object-position: 0% 0%;
+    rotate: 0deg;
+    opacity: 100%;
+  }
+}
+
+.disl.clicked {
+  animation-name: diclicked;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.52, 0, 0.86, 0.69);
+}
+
+@keyframes diclicked {
+  0% {
+    bottom: 400px;
+  }
+
+  100% {
+    bottom: -1000px;
+  }
+}
+
+.dsea.clicked {
+  animation-name: dsclicked;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.5, 0.1, 0.83, 0.46);
+}
+
+@keyframes dsclicked {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: -4000px;
+  }
+}
+
+.nsky2 {
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 0% 120%;
+  opacity: 0%;
+  pointer-events: none;
+}
+
+.nsky2.clicked {
+  animation-name: nclicked2;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.37, 0.01, 0.45, 0.98);
+  animation-delay: 10s;
+}
+
+@keyframes nclicked2 {
+  0% {
+    object-position: 0% 0%;
+
+    opacity: 0%;
+  }
+  40% {
+    object-position: 0% 0%;
+
+    opacity: 100%;
+  }
+  100% {
+    object-position: 0% 110%;
+
+    opacity: 100%;
+  }
+}
+
+.nsea {
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  height: 50%;
+
+  bottom: -1000px;
+
+  pointer-events: none;
+}
+
+.nsea.clicked {
+  filter: blur(2px);
+  animation-name: dsclicked;
+  animation-duration: 15s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.39, 0.05, 0.57, 0.97);
+  animation-delay: 8s;
+}
+
+.nisl {
+  position: absolute;
+  display: block;
+
+  width: 1900px;
+
+  bottom: -400px;
+  right: 0;
+
+  pointer-events: none;
+}
+
+.nisl.clicked {
+  animation-name: niclicked;
+  animation-duration: 14s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.39, 0.05, 0.65, 0.89);
+  animation-delay: 10s;
+}
+
+@keyframes niclicked {
+  0% {
+    bottom: -1800px;
+
+    opacity: 100%;
+  }
+  99% {
+    bottom: 400px;
+
+    opacity: 100%;
+  }
+  100% {
+    bottom: 400px;
+
+    opacity: 0%;
+  }
+}
+
+.nisl2 {
+  position: absolute;
+  display: block;
+
+  width: 1900px;
+
+  bottom: -400px;
+  right: 0;
+
+  pointer-events: none;
+}
+
+.nisl2.clicked {
+  animation-name: disland;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: 23.8s;
+}
+
+.day.clicked {
+  animation-name: day;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.39, 0.05, 0.65, 0.89);
+}
+
+@keyframes day {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 200%;
+  }
+}
+
+.night {
+  position: absolute;
+  top: 200%;
+  left: 0%;
+}
+
+.night.clicked {
+  animation-name: night;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.39, 0.05, 0.64, 1);
+  animation-delay: 12s;
+}
+
+@keyframes night {
+  0% {
+    top: 200%;
+  }
+
+  80% {
+    top: 0%;
+  }
+
+  90% {
+    top: 10%;
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.letters {
+  position: relative;
+  right: 100px;
+  top: 200%;
+  pointer-events: none;
+}
+
+.letters.clicked {
+  animation-name: night;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.39, 0.05, 0.64, 1);
+  animation-delay: 10s;
+}
+
+.lani {
+  position: relative;
+
+  animation-name: l1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+}
+
+@keyframes l1 {
+  0% {
+    top: 0px;
+    right: 0px;
+  }
+
+  25% {
+    top: -50px;
+    right: -20px;
+  }
+
+  70% {
+    top: 10px;
+    right: -10px;
+  }
+  100% {
+    top: 0px;
+    right: 30px;
+  }
+}
+
+.letter1 {
+  position: absolute;
+  object-fit: contain;
+  height: 100px;
+  top: 150px;
+  right: 250px;
+  pointer-events: none;
+}
+
+.letter2 {
+  position: absolute;
+  object-fit: contain;
+  height: 50px;
+  top: 520px;
+  right: 220px;
+  pointer-events: none;
+}
+
+.letter3 {
+  position: absolute;
+  object-fit: contain;
+  height: 180px;
+  top: 280px;
+  right: 0px;
+  pointer-events: none;
+}
+
+.letter4 {
+  position: absolute;
+  object-fit: contain;
+  height: 35px;
+  top: 600px;
+  right: 250px;
+  pointer-events: none;
+}
+
+.nkikki {
+  display: block;
+  position: absolute;
+
+  height: 740px;
+  width: 1437px;
+
+  top: 200px;
+  left: 200px;
+  animation-name: move;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: 0s;
+}
+
+.tail {
+  display: block;
+  position: absolute;
+  top: 560px;
+  left: 400px;
+  animation-name: tail;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.5, 0.9);
+  animation-delay: 0s;
+}
+
+@keyframes tail {
+  0% {
+    top: 560px;
+    left: 400px;
+  }
+
+  50% {
+    top: 570px;
+    left: 360px;
+    rotate: 30deg;
+  }
+
+  100% {
+    top: 560px;
+    left: 400px;
+    rotate: 0deg;
+  }
+}
+
+.rear {
+  display: block;
+  position: absolute;
+  top: 460px;
+  left: 410px;
+
+  animation-name: rear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.38, 0.08, 0.57, 0.97);
+  animation-delay: 0s;
+}
+
+@keyframes rear {
+  0% {
+    top: 460px;
+    left: 410px;
+    rotate: 0deg;
+  }
+
+  30% {
+    top: 460px;
+    left: 410px;
+    rotate: 0deg;
+  }
+
+  50% {
+    top: 468px;
+    left: 415px;
+    rotate: 30deg;
+  }
+
+  80% {
+    top: 460px;
+    left: 410px;
+    rotate: 0deg;
+  }
+}
+
+.lear {
+  display: block;
+  position: absolute;
+  top: 450px;
+  left: 380px;
+
+  animation-name: lear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.38, 0.08, 0.57, 0.97);
+}
+
+@keyframes lear {
+  0% {
+    top: 450px;
+    left: 380px;
+    rotate: 0deg;
+  }
+
+  30% {
+    top: 450px;
+    left: 380px;
+    rotate: 0deg;
+  }
+
+  50% {
+    top: 448px;
+    left: 370px;
+    rotate: -20deg;
+  }
+
+  80% {
+    top: 450px;
+    left: 380px;
+    rotate: 0deg;
+  }
+}
+
+.ribbon {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 530px;
+
+  animation-name: rib;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.38, 0.08, 0.57, 0.97);
+}
+
+@keyframes rib {
+  0% {
+    top: 10px;
+    left: 530px;
+    rotate: 0deg;
+  }
+
+  60% {
+    top: 5px;
+    left: 540px;
+    rotate: 20deg;
+  }
+
+  100% {
+    top: 10px;
+    left: 530px;
+    rotate: 0deg;
+  }
+}
+
+.base {
+  display: block;
+  position: absolute;
+  top: 0px;
+}
+
+.nradio {
+  display: block;
+  position: absolute;
+  top: 563px;
+  left: 482px;
+
+  animation-name: nra;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.29, 0.44, 0.66);
+  animation-delay: 0s;
+}
+
+@keyframes nra {
+  0% {
+    top: 563px;
+    left: 482px;
+  }
+
+  25% {
+    top: 582px;
+    left: 435px;
+    rotate: 30deg;
+  }
+
+  70% {
+    top: 570px;
+    left: 475px;
+    rotate: 5deg;
+  }
+  100% {
+    top: 575px;
+    left: 465px;
+    rotate: 10deg;
+  }
+}
